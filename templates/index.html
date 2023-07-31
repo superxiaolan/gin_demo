@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Go Web page</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="static/js/common.js"> </script>
+
+</head>
+<body>
+    <h1>My First Go Web page</h1>
+    <p>My first paragraph</p>
+    <p>My second paragraph</p>
+    <p>My third paragraph</p>
+
+    获取后端的数据为：
+    {{.msg}}
+
+<form action="/user/add" method = "post">
+
+    <p>用户名：<input type="text" name="username" id="username" value=""></p>
+    <p>密码：<input type="password" name="password" id="password" value=""></p>
+    <p>手机号：<input type="text" name="mobile_number" id="mobile_number" value=""></p>
+    <button type="submit">提交</button>
+
+</form>
+</body>
+</html>
